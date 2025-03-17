@@ -6,27 +6,27 @@ export const artists: Artist[] = [
   {
     id: "artist-1",
     name: "The Weeknd",
-    imageUrl: "https://images.unsplash.com/photo-1618609377864-68609b857e90?q=80&w=200&h=200&auto=format&fit=crop"
+    imageUrl: "https://picsum.photos/seed/artist1/200"
   },
   {
     id: "artist-2",
     name: "Dua Lipa",
-    imageUrl: "https://images.unsplash.com/photo-1604514628550-37477afdf4e3?q=80&w=200&h=200&auto=format&fit=crop"
+    imageUrl: "https://picsum.photos/seed/artist2/200"
   },
   {
     id: "artist-3",
     name: "Kendrick Lamar",
-    imageUrl: "https://images.unsplash.com/photo-1619963258837-b83f3406cfcd?q=80&w=200&h=200&auto=format&fit=crop"
+    imageUrl: "https://picsum.photos/seed/artist3/200"
   },
   {
     id: "artist-4",
     name: "Billie Eilish",
-    imageUrl: "https://images.unsplash.com/photo-1619963258837-b83f3406cfcd?q=80&w=200&h=200&auto=format&fit=crop"
+    imageUrl: "https://picsum.photos/seed/artist4/200"
   },
   {
     id: "artist-5",
     name: "Taylor Swift",
-    imageUrl: "https://images.unsplash.com/photo-1604514628550-37477afdf4e3?q=80&w=200&h=200&auto=format&fit=crop"
+    imageUrl: "https://picsum.photos/seed/artist5/200"
   }
 ];
 
@@ -36,35 +36,35 @@ export const albums: Album[] = [
     id: "album-1",
     title: "After Hours",
     artist: artists[0],
-    imageUrl: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/album1/300",
     releaseYear: 2020
   },
   {
     id: "album-2",
     title: "Future Nostalgia",
     artist: artists[1],
-    imageUrl: "https://images.unsplash.com/photo-1629276301820-0f3eedc29fd0?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/album2/300",
     releaseYear: 2020
   },
   {
     id: "album-3",
     title: "DAMN.",
     artist: artists[2],
-    imageUrl: "https://images.unsplash.com/photo-1629276301820-0f3eedc29fd0?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/album3/300",
     releaseYear: 2017
   },
   {
     id: "album-4",
     title: "Happier Than Ever",
     artist: artists[3],
-    imageUrl: "https://images.unsplash.com/photo-1629276301820-0f3eedc29fd0?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/album4/300",
     releaseYear: 2021
   },
   {
     id: "album-5",
     title: "1989 (Taylor's Version)",
     artist: artists[4],
-    imageUrl: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/album5/300",
     releaseYear: 2023
   }
 ];
@@ -159,7 +159,7 @@ export const playlists: Playlist[] = [
     id: "playlist-1",
     name: "Chill Vibes",
     description: "Relaxing tunes for your downtime",
-    imageUrl: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/playlist1/300",
     createdBy: "user-1",
     tracks: [tracks[0], tracks[2], tracks[6], tracks[8]],
     createdAt: new Date("2023-01-15"),
@@ -169,7 +169,7 @@ export const playlists: Playlist[] = [
     id: "playlist-2",
     name: "Workout Mix",
     description: "High energy tracks to keep you moving",
-    imageUrl: "https://images.unsplash.com/photo-1629276301820-0f3eedc29fd0?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/playlist2/300",
     createdBy: "user-1",
     tracks: [tracks[1], tracks[3], tracks[4], tracks[7]],
     createdAt: new Date("2023-02-10"),
@@ -179,7 +179,7 @@ export const playlists: Playlist[] = [
     id: "playlist-3",
     name: "Focus",
     description: "Concentration and productivity boost",
-    imageUrl: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/playlist3/300",
     createdBy: "user-1",
     tracks: [tracks[5], tracks[9], tracks[2], tracks[6]],
     createdAt: new Date("2023-03-22"),
@@ -189,7 +189,7 @@ export const playlists: Playlist[] = [
     id: "playlist-4",
     name: "Party Starters",
     description: "Get the party going with these hits",
-    imageUrl: "https://images.unsplash.com/photo-1629276301820-0f3eedc29fd0?q=80&w=300&h=300&auto=format&fit=crop",
+    imageUrl: "https://picsum.photos/seed/playlist4/300",
     createdBy: "user-1",
     tracks: [tracks[3], tracks[4], tracks[7], tracks[1]],
     createdAt: new Date("2023-04-05"),
