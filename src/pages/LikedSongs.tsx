@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from "react";
 import MainLayout from "@/components/Layout/MainLayout";
 import TrackList from "@/components/TrackList/TrackList";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
 import { tracks } from "@/data/mockData";
 import { Track } from "@/types/music";
 import { Play, Heart } from "lucide-react";
@@ -29,7 +29,7 @@ const LikedSongs = () => {
     return (
       <MainLayout>
         <div className="flex items-center justify-center h-full">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+          <LoadingSpinner size="lg" />
         </div>
       </MainLayout>
     );

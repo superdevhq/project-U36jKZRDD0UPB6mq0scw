@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import MainLayout from "@/components/Layout/MainLayout";
 import TrackList from "@/components/TrackList/TrackList";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
 import { playlists } from "@/data/mockData";
 import { Playlist as PlaylistType } from "@/types/music";
 import { Clock, Play, MoreHorizontal } from "lucide-react";
@@ -11,7 +11,7 @@ const Playlist = () => {
   const { id } = useParams<{ id: string }>();
   const [playlist, setPlaylist] = useState<PlaylistType | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   useEffect(() => {
     // Simulate API call
     const fetchPlaylist = () => {
@@ -22,20 +22,20 @@ const Playlist = () => {
         setIsLoading(false);
       }, 500);
     };
-    
+
     fetchPlaylist();
   }, [id]);
-  
+
   if (isLoading) {
     return (
       <MainLayout>
         <div className="flex items-center justify-center h-full">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+          <LoadingSpinner size="lg" />
         </div>
       </MainLayout>
     );
   }
-  
+
   if (!playlist) {
     return (
       <MainLayout>
@@ -46,7 +46,7 @@ const Playlist = () => {
       </MainLayout>
     );
   }
-  
+
   return (
     <MainLayout>
       <div className="pb-20">
