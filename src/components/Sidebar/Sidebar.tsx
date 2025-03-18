@@ -22,10 +22,13 @@ const Sidebar = () => {
             <span>Create Playlist</span>
           </button>
           
-          <button className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors mt-4">
+          <Link 
+            to="/liked-songs" 
+            className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors mt-4"
+          >
             <Heart size={20} />
             <span>Liked Songs</span>
-          </button>
+          </Link>
         </div>
       </div>
       
